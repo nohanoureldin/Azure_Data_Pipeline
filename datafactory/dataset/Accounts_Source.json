@@ -1,0 +1,51 @@
+{
+	"name": "Accounts_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Filelocation",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "accounts.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "account",
+				"type": "String"
+			},
+			{
+				"name": "sector",
+				"type": "String"
+			},
+			{
+				"name": "year_established",
+				"type": "String"
+			},
+			{
+				"name": "revenue",
+				"type": "String"
+			},
+			{
+				"name": "employees",
+				"type": "String"
+			},
+			{
+				"name": "office_location",
+				"type": "String"
+			},
+			{
+				"name": "subsidiary_of",
+				"type": "String"
+			}
+		]
+	}
+}
