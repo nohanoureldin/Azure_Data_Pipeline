@@ -61,7 +61,7 @@
 				]
 			},
 			{
-				"name": "data Dictionary",
+				"name": "Data Dictionary",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -195,7 +195,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "data Dictionary",
+						"activity": "Data Dictionary",
 						"dependencyConditions": [
 							"Succeeded"
 						]
