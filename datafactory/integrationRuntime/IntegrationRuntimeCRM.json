@@ -1,0 +1,6 @@
+{
+	"name": "IntegrationRuntimeCRM",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
