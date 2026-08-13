@@ -413,7 +413,7 @@
 						]
 					},
 					{
-						"name": "data Dictionary",
+						"name": "Data Dictionary",
 						"type": "Copy",
 						"dependsOn": [
 							{
@@ -551,7 +551,7 @@
 						"type": "Copy",
 						"dependsOn": [
 							{
-								"activity": "data Dictionary",
+								"activity": "Data Dictionary",
 								"dependencyConditions": [
 									"Succeeded"
 								]
@@ -775,6 +775,36 @@
 						"frequency": "Minute",
 						"interval": 15,
 						"startTime": "2026-08-14T02:07:00",
+						"timeZone": "Egypt Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/OnPremToCloud')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "OnPremToCloud",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 2,
+						"startTime": "2026-08-13T02:14:00",
 						"timeZone": "Egypt Standard Time"
 					}
 				}
