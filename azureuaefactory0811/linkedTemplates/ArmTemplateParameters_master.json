@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azureuaefactory0811"
+		},
+		"DataLake_accountKey": {
+			"value": ""
+		},
+		"Filelocation_password": {
+			"value": ""
+		},
+		"DataLake_properties_typeProperties_url": {
+			"value": "https://azureuaenorthst0811.dfs.core.windows.net/"
+		},
+		"Filelocation_properties_typeProperties_host": {
+			"value": "E:\\Azure_project Data Source\\Data source"
+		},
+		"Filelocation_properties_typeProperties_userId": {
+			"value": "HP"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
