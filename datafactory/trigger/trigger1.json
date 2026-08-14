@@ -15,7 +15,7 @@
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Hour",
-				"interval": 15,
+				"interval": 16,
 				"startTime": "2026-08-13T02:14:00",
 				"timeZone": "Egypt Standard Time"
 			}
