@@ -7,7 +7,7 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
+				"frequency": "Hour",
 				"interval": 15,
 				"startTime": "2026-08-14T02:07:00",
 				"timeZone": "Egypt Standard Time"
