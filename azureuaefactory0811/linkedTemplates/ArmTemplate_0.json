@@ -60,6 +60,26 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Hour",
+						"interval": 16,
+						"startTime": "2026-08-13T02:14:00",
+						"timeZone": "Egypt Standard Time"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/Sink')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -759,7 +779,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -772,7 +792,7 @@
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Minute",
+						"frequency": "Hour",
 						"interval": 15,
 						"startTime": "2026-08-14T02:07:00",
 						"timeZone": "Egypt Standard Time"
@@ -784,7 +804,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/trigger2')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -802,10 +822,11 @@
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Minute",
-						"interval": 2,
-						"startTime": "2026-08-13T02:14:00",
-						"timeZone": "Egypt Standard Time"
+						"frequency": "Day",
+						"interval": 1,
+						"startTime": "2026-08-14T16:26:00",
+						"timeZone": "Egypt Standard Time",
+						"schedule": {}
 					}
 				}
 			},
