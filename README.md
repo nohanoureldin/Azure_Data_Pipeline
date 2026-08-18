@@ -2,15 +2,15 @@
 
 An end-to-end data engineering project built on Azure, moving on-premises Sales CRM data through a full Medallion Architecture (Bronze → Silver → Gold) into a business-ready reporting layer.
 
-## Overview
+## 🔹Overview
 
 This project simulates a real-world scenario: on-premises CRM data (accounts, products, sales pipeline, sales teams) is ingested into Azure, cleaned and validated through a custom Data Quality Gate, transformed into business-ready Gold tables, and surfaced through both SQL querying and an interactive Power BI dashboard.
 
-## Architecture
+## 🔹Architecture
 
 <img width="1692" height="929" alt="ChatGPT Image Aug 18, 2026, 03_07_50 PM" src="https://github.com/user-attachments/assets/22579425-ca48-471b-8255-ed67d385308c" />
 
-## Tech Stack
+## 🔹Tech Stack
 
 - **Azure Data Factory** — ingestion & orchestration
 - **Azure Data Lake Storage Gen2** — central storage layer
@@ -20,7 +20,7 @@ This project simulates a real-world scenario: on-premises CRM data (accounts, pr
 - **Azure Logic Apps · Azure Monitor · Azure Key Vault** — reliability, monitoring, and security
 - **Git / GitHub** — version control
 
-## Data Source
+## 🔹Data Source
 
 Sales CRM dataset (Maven Analytics) — 5 tables:
 - `accounts` — company name, sector, revenue, employee count, office location, parent company
@@ -29,7 +29,7 @@ Sales CRM dataset (Maven Analytics) — 5 tables:
 - `sales_teams` — sales agent, manager, regional office
 - `data_dictionary` — column definitions for the above
 
-## Pipeline Components
+## 🔹Pipeline Components
 
 ### Azure Data Factory
 Ingests the on-premises CSV files into the cloud.
@@ -87,12 +87,12 @@ The reporting layer, connected directly to the Silver and Gold data in ADLS Gen2
 
 Rather than letting data flow silently from Bronze to Silver, this project includes a custom validation layer that runs a set of assert-based checks — null checks, negative-value checks, duplicate detection, and category/domain validation — before any data is written to Silver. If a check fails, the pipeline stops and reports exactly which check failed and why, instead of allowing bad data downstream.
 
-### Supporting Services
+### 🔹Supporting Services
 - **Azure Logic Apps** — HTTP-triggered workflow that sends pipeline status emails
 - **Azure Monitor** — metrics dashboard for pipeline health
 - **Azure Key Vault** — stores the storage account access key securely; Databricks retrieves it via a Databricks Secret Scope linked to Key Vault, so credentials are never hardcoded in notebooks
 
-## Dashboard
+## 🔹Dashboard
 
 <img width="917" height="520" alt="Report" src="https://github.com/user-attachments/assets/b6a89cbf-fa45-4a8a-8ed9-cd28a294be01" />
 
@@ -101,7 +101,7 @@ The Power BI report includes KPI cards (Total Deals, Deals Won, Deals Lost), a m
 
 This project was a great step toward turning theoretical knowledge into practical, hands-on experience with the Azure Data Engineering stack.
 
-## Repository Structure
+## 🔹Repository Structure
 
 ```
 Azure-CRM-Project/
