@@ -1,0 +1,15 @@
+{
+	"name": "azureuaefactory0811",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "uaenorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cb4ce052-283a-4107-9d3a-bdcf8dae6746",
+		"tenantId": "0cc9ceb7-cd51-4824-a254-92088d99af09"
+	}
+}

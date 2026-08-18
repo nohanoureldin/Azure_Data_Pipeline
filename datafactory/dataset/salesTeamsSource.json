@@ -1,0 +1,35 @@
+{
+	"name": "salesTeamsSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Filelocation",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "sales_teams.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "sales_agent",
+				"type": "String"
+			},
+			{
+				"name": "manager",
+				"type": "String"
+			},
+			{
+				"name": "regional_office",
+				"type": "String"
+			}
+		]
+	}
+}

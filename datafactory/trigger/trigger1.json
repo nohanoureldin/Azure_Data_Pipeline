@@ -1,0 +1,17 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 16,
+				"startTime": "2026-08-13T02:14:00",
+				"timeZone": "Egypt Standard Time"
+			}
+		}
+	}
+}
