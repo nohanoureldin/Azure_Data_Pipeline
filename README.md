@@ -8,8 +8,7 @@ This project simulates a real-world scenario: on-premises CRM data (accounts, pr
 
 ## Architecture
 
-![Architecture Diagram](<img width="1692" height="929" alt="ChatGPT Image Aug 18, 2026, 03_07_50 PM" src="https://github.com/user-attachments/assets/4d112964-dc8a-42bd-9562-c9836bdf0861" />
-)
+<img width="1692" height="929" alt="ChatGPT Image Aug 18, 2026, 03_07_50 PM" src="https://github.com/user-attachments/assets/22579425-ca48-471b-8255-ed67d385308c" />
 
 ## Tech Stack
 
